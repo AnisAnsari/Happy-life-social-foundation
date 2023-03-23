@@ -186,6 +186,12 @@ section {
   font-size: 28px;
   font-weight: 700;
 }
+@media only screen and (max-width: 600px) {
+  .navbar-brand {
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
 
 .navbar-brand .dot {
   color: var(--brand);
@@ -252,6 +258,7 @@ section {
   padding: 32px;
   background-color: #fff;
   box-shadow: var(--shadow);
+  height: 340px;
 }
 
 .service h5 {
@@ -427,7 +434,10 @@ section {
 
 .blog-post .content {
   padding: 32px;
+  height: 250px;
+  margin-bottom: 20px;
 }
+/* } */
 
 .blog-post a {
   position: absolute;
@@ -519,4 +529,12 @@ input.form-control {
 }
 .blog-post img {
   height: 250px;
+}
+.photos img {
+  max-width: 100%;
+    height: auto;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+    object-fit: fill;
 }
